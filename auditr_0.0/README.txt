@@ -66,7 +66,7 @@ Usage:
      This command will analyze function calls inside a loop, and will show loop nesting level of 
      these functions. 
 
-	For example, the output of analyzing Availability_example_1.jar (which is a 
+	For example, the output of analyzing JFreeChartToy.jar (which is a 
 	toy version of JFreeChart demonstrating the availability vulnerability) would be the 
 	following. 
      
