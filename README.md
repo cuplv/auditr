@@ -1,7 +1,6 @@
 # auditr
 
-Test
-====
+Submission History
+==================
 
-version 1
----------
+1. version 0.0 submitted on 15th Oct
