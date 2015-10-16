@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <codehawk-java-analyzer>
+  <header info="signatures" time="10/15/2015 18:18:13"/>
+  <signatures exceeeds-10="0" max-targets="3" native-targets="0" size="12" tgts-0="8" tgts-1="2" tgts-10="0" tgts-2="0" tgts-3="2" tgts-4="0" tgts-5="0" tgts-6="0" tgts-7="0" tgts-8="0" tgts-9="0">
+   <ms ix="1" name="&lt;init&gt;" sig="(LJFreeChartToy;I)V" size="3">
+    <bc ixs="17,19,22" size="3"/>
+   </ms>
+   <ms ix="10" name="&lt;init&gt;" sig="(I)V" size="1">
+    <bc ixs="18" size="1"/>
+   </ms>
+   <ms ix="11" name="render" sig="(I)V" size="1">
+    <bc ixs="18" size="1"/>
+   </ms>
+   <ms ix="0" name="&lt;clinit&gt;" sig="()V" size="0"/>
+   <ms ix="9" name="add" sig="(Ljava/lang/Object;)Z" size="0"/>
+   <ms ix="4" name="next" sig="()Ljava/lang/Object;" size="0"/>
+   <ms ix="5" name="drawItem" sig="()D" size="3">
+    <bc ixs="17,19,22" size="3"/>
+   </ms>
+   <ms ix="7" name="println" sig="(Ljava/lang/String;)V" size="0"/>
+   <ms ix="3" name="hasNext" sig="()Z" size="0"/>
+   <ms ix="8" name="read" sig="()I" size="0"/>
+   <ms ix="2" name="listIterator" sig="()Ljava/util/ListIterator;" size="0"/>
+   <ms ix="6" name="&lt;init&gt;" sig="()V" size="0"/>
+  </signatures>
+ </codehawk-java-analyzer>

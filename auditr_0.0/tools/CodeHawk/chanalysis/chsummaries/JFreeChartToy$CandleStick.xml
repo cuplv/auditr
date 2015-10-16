@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <codehawk-java-analyzer>
+  <header info="class" time="10/15/2015 18:18:14"/>
+  <class name="JFreeChartToy$CandleStick" package="">
+   <superclass>JFreeChartToy$Shape</superclass>
+   <fields>
+    <field access="public" name="this$0">
+     <signature>
+      <object>JFreeChartToy</object>
+     </signature>
+    </field>
+   </fields>
+   <constructors>
+    <constructor access="default" valid="no">
+     <signature>
+      <arg nr="1">
+       <object>JFreeChartToy</object>
+      </arg>
+      <arg nr="2">
+       <int/>
+      </arg>
+     </signature>
+     <exceptions/>
+     <summary>
+      <taint/>
+     </summary>
+     <loops/>
+    </constructor>
+   </constructors>
+   <methods>
+    <method access="default" name="drawItem" valid="no">
+     <signature>
+      <return>
+       <double/>
+      </return>
+     </signature>
+     <exceptions/>
+     <calls/>
+     <summary>
+      <postconditions/>
+      <sinks/>
+      <taint/>
+     </summary>
+     <loops loop-count="2" max-depth="1">
+      <loop depth="0" entry-pc="18" exits="1" first-pc="18" instrs="12" inv-count="13" last-pc="48">
+       <calls>
+        <call cn-ix="21" ms-ix="4" pc="31"/>
+        <call cn-ix="21" ms-ix="3" pc="20"/>
+       </calls>
+       <exits>
+        <ex opc="ifEq 26" pc="25"/>
+       </exits>
+       <invariants>
+        <pc-invariants pc="18">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="20">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="25">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="28">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="29">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="31">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="36">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="39">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="42">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="43">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="44">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="45">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="48">
+         <pc-invariant xpr="loop-counter@pc_18 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="18"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+       </invariants>
+      </loop>
+      <loop depth="0" entry-pc="62" exits="1" first-pc="62" instrs="16" inv-count="68" last-pc="96">
+       <max-iterations>
+        <cn>2147483648</cn>
+       </max-iterations>
+       <exits>
+        <ex opc="ifcmpGe 28" pc="71"/>
+       </exits>
+       <invariants>
+        <pc-invariants pc="62">
+         <pc-invariant xpr="loop-counter@pc_62 &lt;= 2147483648">
+          <math>
+           <apply>
+            <leq/>
+            <loop-counter pc="62"/>
+            <cn>2147483648</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="((var6 + (-1 * loop-counter@pc_62)) + 1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <var nr="6"/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <loop-counter pc="62"/>
+              </apply>
+             </apply>
+             <cn>1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="64">
+         <pc-invariant xpr="loop-counter@pc_62 &lt;= 2147483648">
+          <math>
+           <apply>
+            <leq/>
+            <loop-counter pc="62"/>
+            <cn>2147483648</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="((var6 + (-1 * loop-counter@pc_62)) + 1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <var nr="6"/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <loop-counter pc="62"/>
+              </apply>
+             </apply>
+             <cn>1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="65">
+         <pc-invariant xpr="loop-counter@pc_62 &lt;= 2147483648">
+          <math>
+           <apply>
+            <leq/>
+            <loop-counter pc="62"/>
+            <cn>2147483648</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="((var6 + (-1 * loop-counter@pc_62)) + 1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <var nr="6"/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <loop-counter pc="62"/>
+              </apply>
+             </apply>
+             <cn>1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="68">
+         <pc-invariant xpr="loop-counter@pc_62 &lt;= 2147483648">
+          <math>
+           <apply>
+            <leq/>
+            <loop-counter pc="62"/>
+            <cn>2147483648</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="((var6 + (-1 * loop-counter@pc_62)) + 1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <var nr="6"/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <loop-counter pc="62"/>
+              </apply>
+             </apply>
+             <cn>1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="71">
+         <pc-invariant xpr="loop-counter@pc_62 &lt;= 2147483648">
+          <math>
+           <apply>
+            <leq/>
+            <loop-counter pc="62"/>
+            <cn>2147483648</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="((var6 + (-1 * loop-counter@pc_62)) + 1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <var nr="6"/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <loop-counter pc="62"/>
+              </apply>
+             </apply>
+             <cn>1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="74">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="76">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="77">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="80">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="83">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="85">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="86">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="89">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="90">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="91">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="93">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+        <pc-invariants pc="96">
+         <pc-invariant xpr="loop-counter@pc_62 &gt;= 1">
+          <math>
+           <apply>
+            <geq/>
+            <loop-counter pc="62"/>
+            <cn>1</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &lt;= 2147483646">
+          <math>
+           <apply>
+            <leq/>
+            <var nr="6"/>
+            <cn>2147483646</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant xpr="var6 &gt;= 0">
+          <math>
+           <apply>
+            <geq/>
+            <var nr="6"/>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+         <pc-invariant relational="yes" xpr="(((-1 * var6) + loop-counter@pc_62) + -1) = 0">
+          <math>
+           <apply>
+            <eq/>
+            <apply>
+             <plus/>
+             <apply>
+              <plus/>
+              <apply>
+               <times/>
+               <cn>-1</cn>
+               <var nr="6"/>
+              </apply>
+              <loop-counter pc="62"/>
+             </apply>
+             <cn>-1</cn>
+            </apply>
+            <cn>0</cn>
+           </apply>
+          </math>
+         </pc-invariant>
+        </pc-invariants>
+       </invariants>
+      </loop>
+     </loops>
+    </method>
+   </methods>
+   <copyright-notice>Copyright 2012-2015, Kestrel Technology LLC, Palo Alto, CA 94304</copyright-notice>
+  </class>
+ </codehawk-java-analyzer>

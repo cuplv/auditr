@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <codehawk-java-analyzer>
+  <header info="dictionary" time="10/15/2015 18:18:13"/>
+  <dictionary class-field-signatures="11" class-method-signatures="16" classes="31" field-signatures="8" method-signatures="12">
+   <classes size="31">
+    <cn ix="21" name="java.util.ListIterator"/>
+    <cn ix="20" name="java.util.List"/>
+    <cn ix="23" name="java.util.ArrayList"/>
+    <cn ix="0" name="java.lang.Throwable"/>
+    <cn ix="24" name="java.lang.System"/>
+    <cn ix="26" name="java.lang.String"/>
+    <cn ix="8" name="java.lang.Short"/>
+    <cn ix="30" name="java.lang.RuntimeException"/>
+    <cn ix="9" name="java.lang.Object"/>
+    <cn ix="11" name="java.lang.NullPointerException"/>
+    <cn ix="16" name="java.lang.NegativeArraySizeException"/>
+    <cn ix="7" name="java.lang.Long"/>
+    <cn ix="6" name="java.lang.Integer"/>
+    <cn ix="15" name="java.lang.IllegalMonitorStateException"/>
+    <cn ix="5" name="java.lang.Float"/>
+    <cn ix="29" name="java.lang.Exception"/>
+    <cn ix="4" name="java.lang.Double"/>
+    <cn ix="14" name="java.lang.ClassCastException"/>
+    <cn ix="3" name="java.lang.Character"/>
+    <cn ix="2" name="java.lang.Byte"/>
+    <cn ix="1" name="java.lang.Boolean"/>
+    <cn ix="13" name="java.lang.ArrayStoreException"/>
+    <cn ix="12" name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <cn ix="10" name="java.lang.ArithmeticException"/>
+    <cn ix="25" name="java.io.PrintStream"/>
+    <cn ix="27" name="java.io.InputStream"/>
+    <cn ix="28" name="java.io.IOException"/>
+    <cn ix="19" name="JFreeChartToy$Shape"/>
+    <cn ix="22" name="JFreeChartToy$Circle"/>
+    <cn ix="17" name="JFreeChartToy$CandleStick"/>
+    <cn ix="18" name="JFreeChartToy"/>
+   </classes>
+   <field-signatures size="8">
+    <fs cn-ix="18" index="0" name="this$0"/>
+    <fs bt="I" index="2" name="position"/>
+    <fs cn-ix="25" index="6" name="out"/>
+    <fs bt="I" index="3" name="objectCount"/>
+    <fs index="4" name="objectArray2">
+     <array cn-ix="19"/>
+    </fs>
+    <fs cn-ix="20" index="1" name="objectArray"/>
+    <fs cn-ix="27" index="7" name="in"/>
+    <fs bt="I" index="5" name="N"/>
+   </field-signatures>
+   <class-field-signatures size="11">
+    <cfs cn-ix="24" fs-ix="7" ix="10"/>
+    <cfs cn-ix="24" fs-ix="6" ix="9"/>
+    <cfs cn-ix="22" fs-ix="2" ix="8"/>
+    <cfs cn-ix="22" fs-ix="0" ix="1"/>
+    <cfs cn-ix="19" fs-ix="2" ix="6"/>
+    <cfs cn-ix="19" fs-ix="0" ix="7"/>
+    <cfs cn-ix="18" fs-ix="5" ix="2"/>
+    <cfs cn-ix="18" fs-ix="4" ix="4"/>
+    <cfs cn-ix="18" fs-ix="3" ix="5"/>
+    <cfs cn-ix="18" fs-ix="1" ix="3"/>
+    <cfs cn-ix="17" fs-ix="0" ix="0"/>
+   </class-field-signatures>
+   <method-signatures size="12">
+    <ms ix="11" name="render">
+     <args>
+      <a bt="I"/>
+     </args>
+    </ms>
+    <ms ix="8" name="read">
+     <r bt="I"/>
+    </ms>
+    <ms ix="7" name="println">
+     <args>
+      <a cn-ix="26"/>
+     </args>
+    </ms>
+    <ms ix="4" name="next">
+     <r cn-ix="9"/>
+    </ms>
+    <ms ix="2" name="listIterator">
+     <r cn-ix="21"/>
+    </ms>
+    <ms ix="3" name="hasNext">
+     <r bt="Z"/>
+    </ms>
+    <ms ix="5" name="drawItem">
+     <r bt="D"/>
+    </ms>
+    <ms ix="9" name="add">
+     <args>
+      <a cn-ix="9"/>
+     </args>
+     <r bt="Z"/>
+    </ms>
+    <ms ix="1" name="&lt;init&gt;">
+     <args>
+      <a cn-ix="18"/>
+      <a bt="I"/>
+     </args>
+    </ms>
+    <ms ix="10" name="&lt;init&gt;">
+     <args>
+      <a bt="I"/>
+     </args>
+    </ms>
+    <ms ix="6" name="&lt;init&gt;"/>
+    <ms ix="0" name="&lt;clinit&gt;"/>
+   </method-signatures>
+   <class-method-signatures size="16">
+    <cms cn-ix="27" ix="11" ms-ix="8"/>
+    <cms cn-ix="25" ix="10" ms-ix="7"/>
+    <cms cn-ix="23" ix="9" ms-ix="6"/>
+    <cms cn-ix="22" ix="3" ms-ix="5"/>
+    <cms cn-ix="22" ix="2" ms-ix="1"/>
+    <cms cn-ix="21" ix="15" ms-ix="4"/>
+    <cms cn-ix="21" ix="14" ms-ix="3"/>
+    <cms cn-ix="20" ix="12" ms-ix="9"/>
+    <cms cn-ix="20" ix="13" ms-ix="2"/>
+    <cms cn-ix="19" ix="7" ms-ix="5"/>
+    <cms cn-ix="19" ix="6" ms-ix="1"/>
+    <cms cn-ix="18" ix="5" ms-ix="11"/>
+    <cms cn-ix="18" ix="4" ms-ix="10"/>
+    <cms cn-ix="17" ix="1" ms-ix="5"/>
+    <cms cn-ix="17" ix="0" ms-ix="1"/>
+    <cms cn-ix="9" ix="8" ms-ix="6"/>
+   </class-method-signatures>
+  </dictionary>
+ </codehawk-java-analyzer>

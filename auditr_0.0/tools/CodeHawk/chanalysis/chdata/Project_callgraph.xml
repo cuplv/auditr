@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <codehawk-java-analyzer>
+  <header info="callgraph" time="10/15/2015 18:18:13"/>
+  <callgraph>
+   <edges empty="7" private="7" resolved="7" size="15">
+    <edge cn-ix="23" ix="4" ms-ix="6" pc="15" tag="r" tt="p"/>
+    <edge cn-ix="19" ix="0" ms-ix="1" pc="8" tag="r" tt="p"/>
+    <edge cn="java.io.PrintStream" cn-ix="25" ix="5" ms="println" ms-ix="7" pc="12" tag="cn-empty"/>
+    <edge cn-if="java.util.ListIterator" cn-ix="21" ix="1" ms="next" ms-ix="4" pc="31" tag="if-empty"/>
+    <edge cn-ix="17" ix="5" ms-ix="1" pc="33" tag="r" tt="p"/>
+    <edge cn-ix="9" ix="6" ms-ix="6" pc="6" tag="r" tt="p"/>
+    <edge cn-ix="22" ix="5" ms-ix="1" pc="52" tag="r" tt="p"/>
+    <edge ix="5" ms-ix="5" pc="73" tag="v">
+     <s-tgts ixs="17,19,22" size="3"/>
+    </edge>
+    <edge cn="java.io.InputStream" cn-ix="27" ix="5" ms="read" ms-ix="8" pc="18" tag="cn-empty"/>
+    <edge cn-if="java.util.List" cn-ix="20" ix="5" ms="add" ms-ix="9" pc="83" tag="if-empty"/>
+    <edge cn-ix="19" ix="2" ms-ix="1" pc="8" tag="r" tt="p"/>
+    <edge cn-if="java.util.ListIterator" cn-ix="21" ix="1" ms="hasNext" ms-ix="3" pc="20" tag="if-empty"/>
+    <edge cn-if="java.util.List" cn-ix="20" ix="1" ms="listIterator" ms-ix="2" pc="11" tag="if-empty"/>
+    <edge cn="java.io.PrintStream" cn-ix="25" ix="5" ms="println" ms-ix="7" pc="65" tag="cn-empty"/>
+    <edge cn-ix="9" ix="4" ms-ix="6" pc="1" tag="r" tt="p"/>
+   </edges>
+   <callback-edges size="0"/>
+  </callgraph>
+ </codehawk-java-analyzer>

@@ -1,0 +1,46 @@
+
+The use of hash functions for data storage and retrieval is a common
+cause for availability vulnerabilities as hash collisions could
+significantly increase the cost to insert and delete data. To trigger
+an availability vulnerability based on hash collisions, typically
+thousands of hash collisions are required to achieve a clear impact on
+the performance. Hence, one can only exploit a vulnerability if it is
+possible to generate thousands of hash collisions. For sophisticated
+hash functions, such as MD5, it is even hard to compute a handful of
+hash collisions. However, sophisticated hash functions are quite
+expensive and therefore more simple hash functions, usually 32-bit,
+are used in most applications.  
+
+
+Our tool Auditr will be able to detect and exploit availability 
+vulnerabilities due to hash collisions. The tool consists of four 
+stages Loopr, Pathr, Observr, and Exploitr. The first stage Loopr 
+detects potential hash function usage in Java bytecode. The current 
+version simply checks for the word "hash" n the bytecode. In future 
+versions this will be made more robust by checking for a combination 
+of primes and multiplication. Additionally, Loopr will provide a list 
+of functions which it flagged for (potential) hash function usage and 
+whether the execution of a loop depends on the hash. In the example, 
+we provide the source code of the list corresponding to the flagged 
+bytecode.
+
+
+
+In the second stage, Pathr will use the result of Loopr to determine 
+whether the user can control the input of the flagged procedures. This
+is not yet implemented. 
+
+
+n the third (Observr) and fourth stage (Exploitr), it is checked 
+whether the potential vulnerability can be exploited. This will be done
+by our tool HashClash which can generate many strings that have the
+same hash value for a given hash function. HashClash is based on a 
+modified SAT solver and produces all solutions (strings of a given 
+length) that have the input hash value for the given hash function.
+HashClash can efficiently generate many thousands of hash collisions.
+Two scripts are provided that demonstrate its use for the default
+hash function in Java (hashCode for strings) and a stronger hash 
+function, known as Fowler-Noll-Vo.
+
+
+

@@ -1,0 +1,3 @@
+73  JFreeChartToy.render(int) (2-cfg depth: 2)
+   2  JFreeChartToy$CandleStick.double drawItem()
+

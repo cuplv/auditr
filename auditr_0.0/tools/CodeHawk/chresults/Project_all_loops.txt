@@ -1,0 +1,664 @@
+Loops in Project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Total number of loops   :      3
+Loops proven bounded    :      2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Depths: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   0:      3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  max-it     depth     calls   first pc 
+================================================================================
+    ?          0             2    18  JFreeChartToy$CandleStick.double drawItem()
+2147483648     0             0    62  JFreeChartToy$CandleStick.double drawItem()
+2147483648     0             7     2  JFreeChartToy.render(int)
+
+
+================================================================================
+Loop invariants
+================================================================================
+--------------------------------------------------------------------------------
+18 -- 48  JFreeChartToy$CandleStick.double drawItem()
+--------------------------------------------------------------------------------
+   pc = 18
+      loop-counter@pc_18 >= 1
+
+   pc = 20
+      loop-counter@pc_18 >= 1
+
+   pc = 25
+      loop-counter@pc_18 >= 1
+
+   pc = 28
+      loop-counter@pc_18 >= 1
+
+   pc = 29
+      loop-counter@pc_18 >= 1
+
+   pc = 31
+      loop-counter@pc_18 >= 1
+
+   pc = 36
+      loop-counter@pc_18 >= 1
+
+   pc = 39
+      loop-counter@pc_18 >= 1
+
+   pc = 42
+      loop-counter@pc_18 >= 1
+
+   pc = 43
+      loop-counter@pc_18 >= 1
+
+   pc = 44
+      loop-counter@pc_18 >= 1
+
+   pc = 45
+      loop-counter@pc_18 >= 1
+
+   pc = 48
+      loop-counter@pc_18 >= 1
+
+
+--------------------------------------------------------------------------------
+62 -- 96  JFreeChartToy$CandleStick.double drawItem()
+--------------------------------------------------------------------------------
+   pc = 62
+      loop-counter@pc_62 <= 2147483648
+      loop-counter@pc_62 >= 1
+      var6 >= 0
+      ((var6 + (-1 * loop-counter@pc_62)) + 1) = 0
+
+   pc = 64
+      loop-counter@pc_62 <= 2147483648
+      loop-counter@pc_62 >= 1
+      var6 >= 0
+      ((var6 + (-1 * loop-counter@pc_62)) + 1) = 0
+
+   pc = 65
+      loop-counter@pc_62 <= 2147483648
+      loop-counter@pc_62 >= 1
+      var6 >= 0
+      ((var6 + (-1 * loop-counter@pc_62)) + 1) = 0
+
+   pc = 68
+      loop-counter@pc_62 <= 2147483648
+      loop-counter@pc_62 >= 1
+      var6 >= 0
+      ((var6 + (-1 * loop-counter@pc_62)) + 1) = 0
+
+   pc = 71
+      loop-counter@pc_62 <= 2147483648
+      loop-counter@pc_62 >= 1
+      var6 >= 0
+      ((var6 + (-1 * loop-counter@pc_62)) + 1) = 0
+
+   pc = 74
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 76
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 77
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 80
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 83
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 85
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 86
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 89
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 90
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 91
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 93
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+   pc = 96
+      loop-counter@pc_62 >= 1
+      var6 <= 2147483646
+      var6 >= 0
+      (((-1 * var6) + loop-counter@pc_62) + -1) = 0
+
+
+--------------------------------------------------------------------------------
+2 -- 110  JFreeChartToy.render(int)
+--------------------------------------------------------------------------------
+   pc = 2
+      loop-counter@pc_2 <= 2147483648
+      loop-counter@pc_2 >= 1
+      var2 >= 0
+      var3 <= 2
+      var3 >= 1
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 3
+      loop-counter@pc_2 <= 2147483648
+      loop-counter@pc_2 >= 1
+      var2 >= 0
+      var3 <= 2
+      var3 >= 1
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 4
+      loop-counter@pc_2 <= 2147483648
+      loop-counter@pc_2 >= 1
+      var2 >= 0
+      var3 <= 2
+      var3 >= 1
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 7
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 10
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 12
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 15
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 18
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 21
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 22
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 23
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 24
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 27
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 30
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 31
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 32
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 33
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 36
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 38
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 41
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 42
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 43
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 46
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 49
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 50
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 51
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 52
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 55
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 57
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 = 2
+      ((var1 + (-1 * var2)) + -1) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 60
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+
+   pc = 63
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+
+   pc = 65
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+
+   pc = 68
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      ((var1 + (-1 * var2)) + -1) >= 0
+
+   pc = 71
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 73
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 76
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 77
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 78
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 81
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 83
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 88
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 89
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 90
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 93
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 94
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 96
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 97
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 98
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 99
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 102
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 103
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 104
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 107
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+   pc = 110
+      loop-counter@pc_2 >= 1
+      var2 <= 2147483646
+      var2 >= 0
+      var1 >= 1
+      var3 <= 2
+      var3 >= 1
+      (var1 + (-1 * loop-counter@pc_2)) >= 0
+      ((var2 + (-1 * loop-counter@pc_2)) + 1) = 0
+
+
