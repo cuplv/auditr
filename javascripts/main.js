@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ;(function () {
 	
 	'use strict';
@@ -474,6 +475,8 @@
 
 }());
 =======
+=======
+>>>>>>> origin/gh-pages
 var sectionHeight = function() {
   var total    = $(window).height(),
       $section = $('section').css('height','auto');
@@ -526,5 +529,9 @@ fixScale = function(doc) {
     scales = [.25, 1.6];
     doc[addEvent](type, fix, true);
   }
+<<<<<<< HEAD
+};
+>>>>>>> origin/gh-pages
+=======
 };
 >>>>>>> origin/gh-pages
