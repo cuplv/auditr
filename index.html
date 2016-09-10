@@ -47,33 +47,36 @@
 <p>The fundamental goal of the Auditr system is to allow analysts to  quickly and reliably 
 pinpoint Java applications with exploitable security vulnerabilities.  Specifically, 
 Auditr will focus on two kinds of security vulnerabilities related to space and 
-time usage of programs:
-1. <strong>Availability problems</strong>: which arise when a user-provided input controls the 
-   asymptotic complexity or termination of a program component. Since attackers can 
-   substantially degrade system performance through carefully selected inputs, 
-   availability problems can be exploited by malicious parties to launch denial of service 
-   attacks.</p>
+time usage of programs:</p>
 
 <ol>
-<li>
-<strong>Confidentiality problems</strong>: which arise when two different user inputs result in 
+<li><p><strong>Availability problems</strong>: which arise when a user-provided input controls the 
+asymptotic complexity or termination of a program component. Since attackers can 
+substantially degrade system performance through carefully selected inputs, 
+availability problems can be exploited by malicious parties to launch denial of service 
+attacks.</p></li>
+<li><p><strong>Confidentiality problems</strong>: which arise when two different user inputs result in 
 substantially different resource usage behaviors depending on the value of some 
 confidential data stored in the system.  If the program exhibits substantially different 
 space or time usage characteristics depending on user input, attackers can exploit 
-this behavior to learn confidential information through side channel attacks.</li>
+this behavior to learn confidential information through side channel attacks.</p></li>
 </ol>
 
 <p>Auditr’s key goal in identifying availability and confidentiality problems is to minimize both false positives and false negatives. In addition, every identified potential security vulnerability should be accompanied by sufficient evidence to convince a human analyst of the exploitable nature of the vulnerability. Auditr will need to overcome a multitude of technical challenges to attain the goals described above. Specifically, the members of the Auditr's team will address the following key research problems: <em>Trade-off between precision, soundness, and scalability</em>, <em>Analysis of asymptotic resource usage behavior</em>, <em>Analysis of sanitization code</em>, <em>Providing evidence to analysts</em>. </p>
 
-<p>The following figure shows the workflow of Auditr which has four components: LOOPR, PATHR, OBSERVR, and EXPLOITR. 
+<p>The following figure shows the workflow of Auditr which has four components: LOOPR, PATHR, OBSERVR, and EXPLOITR. </p>
 
-<img src="Auditr_approach.png" alt="alt tag">
+<p>
+<img src="Auditr_approach.png" alt="alt tag"></p>
 
-Below we explain the key ideas underlying each of these components: 
-1. <strong>Loopr</strong>. The LOOPR component will perform a conservative and highly scalable static analysis of all relevant byte code to identify all vulnerable algorithmic components. Since the aim of LOOPR is to identify all possible resource usage vulnerabilities, soundness will be of primary concern and precision will be secondary. 
-2. <strong>Pathr</strong>. The task of the PATHR component is to refine the results of LOOPR by performing a more precise path and context-sensitive static analysis. For instance, using a more precise interprocedural analysis, PATHR might determine that the component in question cannot be controlled by user input. 
-3. <strong>Observr</strong>. The task of OBSERVR is to further refine the results of PATHR by performing solver guided static analysis. Specifically, OBSERVR will analyze sanitizers and determine the condition a user input must satisfy to reach the vulnerable component. 
-4. <strong>Exploitr</strong>. The EXPLOITR component will further generalize the witnesses produced by OBSERVR and generate exploits similar to those that might be used by an attacker to launch denial of service or side channel attacks.  The results of EXPLOITR will be used to rank the detected vulnerabilities according to their threat level and further convince the analyst of the exploitable nature of the problem.</p>
+<p>Below we explain the key ideas underlying each of these components: </p>
+
+<ol>
+<li><p><strong>Loopr</strong>. The LOOPR component will perform a conservative and highly scalable static analysis of all relevant byte code to identify all vulnerable algorithmic components. Since the aim of LOOPR is to identify all possible resource usage vulnerabilities, soundness will be of primary concern and precision will be secondary. </p></li>
+<li><p><strong>Pathr</strong>. The task of the PATHR component is to refine the results of LOOPR by performing a more precise path and context-sensitive static analysis. For instance, using a more precise interprocedural analysis, PATHR might determine that the component in question cannot be controlled by user input. </p></li>
+<li><p><strong>Observr</strong>. The task of OBSERVR is to further refine the results of PATHR by performing solver guided static analysis. Specifically, OBSERVR will analyze sanitizers and determine the condition a user input must satisfy to reach the vulnerable component. </p></li>
+<li><p><strong>Exploitr</strong>. The EXPLOITR component will further generalize the witnesses produced by OBSERVR and generate exploits similar to those that might be used by an attacker to launch denial of service or side channel attacks.  The results of EXPLOITR will be used to rank the detected vulnerabilities according to their threat level and further convince the analyst of the exploitable nature of the problem.</p></li>
+</ol>
 
 <h2>
 <a id="available-tools" class="anchor" href="#available-tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Available Tools</h2>
