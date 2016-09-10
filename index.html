@@ -63,8 +63,9 @@ this behavior to learn confidential information through side channel attacks.
 </p></li>
 </ol>
 
-<p>Auditr’s key goal in identifying availability and confidentiality problems is to minimize both false positives and false negatives. In addition, every identified potential security vulnerability should be accompanied by sufficient evidence to convince a human analyst of the exploitable nature of the vulnerability. In the case of availability problems, the evidence provided by Auditr should be in the form of an input that triggers excessive resource usage. For confidentiality problems, Auditr’s goal is to provide a pair of inputs that result in disproportionate resource usage and identify the information that an attacker can glean by observing the program’s execution on these inputs. Ultimately, Auditr’s job is to maximize the productivity of the human analyst.
+<p>Auditr’s key goal in identifying availability and confidentiality problems is to minimize both false positives and false negatives. In addition, every identified potential security vulnerability should be accompanied by sufficient evidence to convince a human analyst of the exploitable nature of the vulnerability. In the case of availability problems, the evidence provided by Auditr should be in the form of an input that triggers excessive resource usage. For confidentiality problems, Auditr’s goal is to provide a pair of inputs that result in disproportionate resource usage and identify the information that an attacker can glean by observing the program’s execution on these inputs. Ultimately, Auditr’s job is to maximize the productivity of the human analyst.</p>
 
+<p>
 <img src="Auditr_approach.png" alt="alt tag">
 </p>
 
@@ -76,10 +77,10 @@ this behavior to learn confidential information through side channel attacks.
 <h3>
 <a id="discriminer" class="anchor" href="#discriminer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Discriminer</h3>
 
-<p>
-<img src="Auditr_Discriminer.png" alt="alt tag">
+<p>This is a tool for program analysis of side-channel related to confidentiality vulnerabilities. The goal is to Discriminate program traces based on observable behaviors like time, memory, and network. This tool is a combination of dynamic analysis techniques and probabilistic machine learning approaches to analyze program confidentiality. In the first step, dynamic analysis techniques are applied to extract data set from a target application (data includes program internal features and observable behaviors like execution time). Next, probabilistic clustering techniques are applied to extract similarities between data records. Finally, a classification method is applied to learns a set of discrimination formulae which distinguish between traces based on observable behavior introduced in the data set. 
 
-This is a tool for program analysis of side-channel related to confidentiality vulnerabilities. The goal is to Discriminate program traces based on observable behaviors like time, memory, and network. This tool is a combination of dynamic analysis techniques and probabilistic machine learning approaches to analyze program confidentiality. In the first step, dynamic analysis techniques are applied to extract data set from a target application (data includes program internal features and observable behaviors like execution time). Next, probabilistic clustering techniques are applied to extract similarities between data records. Finally, a classification method is applied to learns a set of discrimination formulae which distinguish between traces based on observable behavior introduced in the data set. </p>
+<img src="Auditr_Discriminer.png" alt="alt tag">
+</p>
 
 <h5>
 <a id="github-source-code-available-here" class="anchor" href="#github-source-code-available-here" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub source code available <a href="https://github.com/cuplv/Discriminer">here</a>
