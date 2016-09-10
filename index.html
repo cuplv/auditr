@@ -60,11 +60,13 @@ substantially different resource usage behaviors depending on the value of some
 confidential data stored in the system.  If the program exhibits substantially different 
 space or time usage characteristics depending on user input, attackers can exploit 
 this behavior to learn confidential information through side channel attacks.
+</p></li>
+</ol>
+
+<p>Auditr’s key goal in identifying availability and confidentiality problems is to minimize both false positives and false negatives. In addition, every identified potential security vulnerability should be accompanied by sufficient evidence to convince a human analyst of the exploitable nature of the vulnerability. In the case of availability problems, the evidence provided by Auditr should be in the form of an input that triggers excessive resource usage. For confidentiality problems, Auditr’s goal is to provide a pair of inputs that result in disproportionate resource usage and identify the information that an attacker can glean by observing the program’s execution on these inputs. Ultimately, Auditr’s job is to maximize the productivity of the human analyst.
 
 <img src="Auditr_approach.png" alt="alt tag">
-
-Auditr’s key goal in identifying availability and confidentiality problems is to minimize both false positives and false negatives. In addition, every identified potential security vulnerability should be accompanied by sufficient evidence to convince a human analyst of the exploitable nature of the vulnerability. In the case of availability problems, the evidence provided by Auditr should be in the form of an input that triggers excessive resource usage. For confidentiality problems, Auditr’s goal is to provide a pair of inputs that result in disproportionate resource usage and identify the information that an attacker can glean by observing the program’s execution on these inputs. Ultimately, Auditr’s job is to maximize the productivity of the human analyst.</p></li>
-</ol>
+</p>
 
 <h2>
 <a id="available-tools" class="anchor" href="#available-tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Available Tools</h2>
