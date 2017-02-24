@@ -43,6 +43,8 @@ This is a tool for program analysis of side-channel related to confidentiality v
 </br>
 ![alt tag](Auditr_Discriminer.png)
 </br>
+#### Publication
+[Discriminating Traces with Time](https://arxiv.org/pdf/1702.07103.pdf), Saeid Tizpaz-Niari, Pavol Cerny, Bor-Yuh Evan Chang, Sriram Sankaranarayanan and Ashutosh Trivedi, Accepted in 23'rd International Conference on Tools and Algorithms for Construction and Analysis of Systems (TACAS'17).
 ##### GitHub source code available [here](https://github.com/cuplv/Discriminer)
 ##### Complete Introduction and Background: [README](Discriminer_README.pdf) 
 </br>
